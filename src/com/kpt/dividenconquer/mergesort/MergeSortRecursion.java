@@ -1,8 +1,8 @@
-package com.kpt.dividenconquer;
+package com.kpt.dividenconquer.mergesort;
 
 import java.util.Arrays;
 
-public class MergeSort {
+public class MergeSortRecursion {
 	public static void main(String[] args) {
 		int array[] = { 10, 9, 1, 5, 4, 6, 7, 8, 3, 2 };
 		sort(array);

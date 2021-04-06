@@ -1,8 +1,8 @@
-package com.kpt.dividenconquer;
+package com.kpt.dividenconquer.quicksort;
 
 import java.util.Arrays;
 
-public class QuickSortEasy {
+public class QuickSortRecursionLastPivot {
 
     public static void main(String[] args) {
         int[] array = { 9, -3, 5, 2, 6, 8, -6, 1, 3 };

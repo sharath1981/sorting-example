@@ -1,8 +1,8 @@
-package com.kpt.dividenconquer;
+package com.kpt.dividenconquer.quicksort;
 
 import java.util.Arrays;
 
-public class QuickSort {
+public class QuickSortRecursionMidPivot {
     public static void main(String[] args) {
         int array[] = { 10, 9, 1, 2, 4, 4, 5, 7, 8, 5, 3, 2 };
         sort(array, 0, array.length - 1);
