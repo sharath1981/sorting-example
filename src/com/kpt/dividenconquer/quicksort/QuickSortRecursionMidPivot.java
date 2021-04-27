@@ -10,37 +10,27 @@ public class QuickSortRecursionMidPivot {
     }
 
     public static void sort(int[] array, int low, int high) {
-        // check for empty or null array
-        if (array == null || array.length == 0) {
+
+        if (array == null || array.length == 0 || low >= high) {
             return;
         }
 
-        if (low >= high) {
-            return;
-        }
-
-        // Get the pivot element from the middle of the list
         int middle = low + (high - low) / 2;
         int pivot = array[middle];
-
-        // make left < pivot and right > pivot
         int i = low, j = high;
         while (i <= j) {
-            // Check until all values on left side array are lower than pivot
+
             while (array[i] < pivot) {
                 i++;
             }
-            // Check until all values on right side array are greater than pivot
             while (array[j] > pivot) {
                 j--;
             }
-            // Now compare values from both side of lists to see if they need swapping
-            // After swapping move the iterator on both lists
             if (i <= j) {
                 swap(array, i++, j--);
             }
         }
-        // Do same operation as above recursively to sort two sub arrays
+
         if (low < j) {
             sort(array, low, j);
         }
