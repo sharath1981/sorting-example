@@ -45,8 +45,7 @@ public class QuickSortRecursionLastPivot {
         // before the pivot.
         for (int i = start; i < end; i++) {
             if (array[i] <= pivot) {
-                swap(array, i, pIndex);
-                pIndex++;
+                swap(array, i, pIndex++);
             }
         }
 
